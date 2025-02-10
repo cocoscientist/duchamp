@@ -9,7 +9,7 @@ const TextBox = (props:TextBoxProps) => {
     return (
         <div style={{
             color:props.color,
-            fontSize:props.size,
+            fontSize:props.size+"px",
             position:"absolute",
             textAlign:"center",
             marginLeft:"45%",
