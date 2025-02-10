@@ -1,4 +1,8 @@
-const ImageViewer = (props:any) => {
+interface ImageViewerProps {
+    image:string;
+}
+
+const ImageViewer = (props:ImageViewerProps) => {
     return (
         <img src={props.image}/>
     )

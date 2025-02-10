@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ImageViewer from './components/ImageViewer';
+import ImageEditor from './components/ImageEditor';
 
 function App() {
   const [image, setImage] = useState(undefined)
@@ -14,7 +14,7 @@ function App() {
     <>
       <h1>Upload Image</h1>
       <input type = 'file' onChange={handleUpload}></input>
-      {image!==undefined?<ImageViewer image={URL.createObjectURL(image)}/>:<></>}
+      {image!==undefined?<ImageEditor image={URL.createObjectURL(image)}/>:<></>}
     </>
   )
 }
